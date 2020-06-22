@@ -1,0 +1,3 @@
+FinServ__FinancialAccountNumber__c,FinServ__FinancialAccountType__c,FinServ__PrimaryOwner__r.Enterprise_Party_Id__c
+"123456789","Brokerage","P1"
+"1","Cash Management Account","E1"

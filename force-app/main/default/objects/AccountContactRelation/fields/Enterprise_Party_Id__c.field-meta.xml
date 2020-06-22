@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enterprise_Party_Id__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <description>Unique ExternalId for this junction object.   Concatenates the Source and Target externalids.</description>
+    <externalId>true</externalId>
+    <label>Enterprise Party Id</label>
+    <length>45</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>
