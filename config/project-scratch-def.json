@@ -11,7 +11,11 @@
     "PersonAccounts",
     "IndustriesActionPlan",
     "FinancialServicesUser:5",
-    "DocumentChecklist"
+    "FinancialServicesCommunityUser:10",
+    "DocumentChecklist",
+    "LiveAgent",
+    "PlatformConnect",
+    "PlatformEncryption"
   ],
    "settings": {
         "lightningExperienceSettings": {
