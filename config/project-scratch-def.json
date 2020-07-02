@@ -30,7 +30,6 @@
             "enableEnablePRM" : true,
             "enableNetPortalUserReportOpts" : true,
             "enablePRMAccRelPref" : true,
-            "applyLoginPageTypeToEmbeddedLogin" : true,
             "enableCspContactVisibilityPref" : true,
             "enableCspNotesOnAccConPref" : true
         }
