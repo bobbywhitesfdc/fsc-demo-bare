@@ -25,7 +25,14 @@
             "enableChatter": true
         },
         "communitiesSettings": {
-            "enableNetworksEnabled": true
+            "enableNetworksEnabled": true,
+            "enableCommunityWorkspaces" : true,
+            "enableEnablePRM" : true,
+            "enableNetPortalUserReportOpts" : true,
+            "enablePRMAccRelPref" : true,
+            "applyLoginPageTypeToEmbeddedLogin" : true,
+            "enableCspContactVisibilityPref" : true,
+            "enableCspNotesOnAccConPref" : true
         }
     }
 }
