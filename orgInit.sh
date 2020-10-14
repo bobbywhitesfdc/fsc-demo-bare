@@ -2,7 +2,7 @@
 # Exit on error!
 set -euxo pipefail
 #create scratch org
-sfdx force:org:create -f config/project-scratch-def.json -s -a FSCDEMO 
+sfdx force:org:create -f config/project-scratch-def.json -s -a FSCDEMO username=admin@fsc.demo.org
 
 #package installs of the main FSC package
 # Working around deprecation issues by allowing hand editing
