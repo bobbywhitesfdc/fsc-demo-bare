@@ -9,9 +9,12 @@
     "Communities",
     "ContactsToMultipleAccounts",
     "PersonAccounts",
-    "IndustriesActionPlan",
     "FinancialServicesUser:5",
-    "DocumentChecklist"
+    "FinancialServicesCommunityUser:10",
+    "DocumentChecklist",
+    "LiveAgent",
+    "PlatformConnect",
+    "PlatformEncryption"
   ],
    "settings": {
         "lightningExperienceSettings": {
@@ -21,7 +24,13 @@
             "enableChatter": true
         },
         "communitiesSettings": {
-            "enableNetworksEnabled": true
+            "enableNetworksEnabled": true,
+            "enableCommunityWorkspaces" : true,
+            "enableEnablePRM" : true,
+            "enableNetPortalUserReportOpts" : true,
+            "enablePRMAccRelPref" : true,
+            "enableCspContactVisibilityPref" : true,
+            "enableCspNotesOnAccConPref" : true
         }
     }
 }
