@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__NoJointOwnerForIndividualAccounts</fullName>
+    <active>true</active>
+    <description>Error message when a joint owner is entered for an individually owned account.</description>
+    <errorConditionFormula>AND(ISPICKVAL(FinServ__Ownership__c , &quot;Individual&quot;), NOT(ISBLANK(FinServ__JointOwner__c)))</errorConditionFormula>
+    <errorMessage>Individually owned accounts can&apos;t have a joint owner.</errorMessage>
+</ValidationRule>

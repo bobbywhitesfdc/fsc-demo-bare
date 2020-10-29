@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__InsuranceCustomerSince__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Represents the insurance relationship start date. This field can be used in both B2B, and B2C cases</description>
+    <externalId>false</externalId>
+    <label>Insurance Customer Since</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

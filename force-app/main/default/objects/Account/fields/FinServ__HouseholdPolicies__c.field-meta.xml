@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__HouseholdPolicies__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The total number of policies currently owned by the policyholder&apos;s primary household.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the count of the policies owned by the members in the household. For example, if the Rachel Adam&apos;s primary household has three members, including Rachel, and each of them owns two policies, this field will show a value of 6.</inlineHelpText>
+    <label>Household Policies</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

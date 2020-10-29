@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__CheckingAccount</fullName>
+    <active>true</active>
+    <description>Represents a deposit account for withdrawals and deposits</description>
+    <label>Checking Account</label>
+    <picklistValues>
+        <picklist>FinServ__ClosureReason__c</picklist>
+        <values>
+            <fullName>Account Maintenance Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account no longer needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moved out of the country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not able to maintain account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__FinancialAccountSource__c</picklist>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Entry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__FinancialAccountType__c</picklist>
+        <values>
+            <fullName>CD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash Management Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Checking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Savings</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__InvestmentObjectives__c</picklist>
+        <values>
+            <fullName>Growth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquidity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Optimization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__ModelPortfolio__c</picklist>
+        <values>
+            <fullName>Aggressive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Balanced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conservative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Growth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__Ownership__c</picklist>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trust</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__PaymentFrequency__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biweekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quaterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiannual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__PolicyTerm__c</picklist>
+        <values>
+            <fullName>1 Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Years</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Months</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__RebalanceFrequency__c</picklist>
+        <values>
+            <fullName>Annually</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiannually</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__ServiceType__c</picklist>
+        <values>
+            <fullName>ACH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bill Presentment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Bill Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controlled Disbursement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lockbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merchant Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchase Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Deposit Capture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweep to Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweep to Repo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zero Balance Account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__Stage__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charged off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dormant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escheat</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__StatementFrequency__c</picklist>
+        <values>
+            <fullName>Biweekly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yearly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__TaxStatus__c</picklist>
+        <values>
+            <fullName>Nonqualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__TimeHorizon__c</picklist>
+        <values>
+            <fullName>Long Term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short Term</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinServ__Type__c</picklist>
+        <values>
+            <fullName>Leased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Family home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Town home</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
