@@ -1,13 +1,12 @@
 {
   "orgName": "FSC with Partner Communities",
   "country": "US",
-  "edition": "Enterprise",
-  "description": "Financial Services Cloud Playground",
+  "edition": "Developer",
+  "description": "Financial Services Cloud demo",
   "hasSampleData": false,
   "language": "en_US",
   "features": [
     "Communities",
-    "PartnerCommunity",
     "ContactsToMultipleAccounts",
     "PersonAccounts",
     "FinancialServicesUser:5",
