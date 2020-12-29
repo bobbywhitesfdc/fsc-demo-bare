@@ -18,9 +18,14 @@
     "PlatformConnect",
     "PlatformEncryption",
     "ServiceCloud",
-    "LiveMessage"
+    "LiveMessage",
+    "EventLogFile",
+    "SecurityEventEnabled"
   ],
    "settings": {
+        "accountSettings": {
+          "enableRelateContactToMultipleAccounts" : true
+        },
         "lightningExperienceSettings": {
             "enableS1DesktopEnabled": true
         },
