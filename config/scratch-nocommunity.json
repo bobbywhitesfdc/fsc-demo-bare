@@ -1,0 +1,34 @@
+{
+  "orgName": "FSC Internal Only",
+  "country": "US",
+  "edition": "Developer",
+  "description": "Contains a baseline demo of the Financial Services Cloud app.",
+  "hasSampleData": false,
+  "language": "en_US",
+  "features": [
+    "ContactsToMultipleAccounts",
+    "PersonAccounts",
+    "FinancialServicesUser:5",
+    "DocumentChecklist",
+    "IndustriesActionPlan",
+    "LiveAgent",
+    "PlatformConnect",
+    "PlatformEncryption",
+    "ServiceCloud",
+    "LiveMessage"
+  ],
+   "settings": {
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "chatterSettings": {
+            "enableChatter": true
+        },
+        "omniChannelSettings": {
+            "enableOmniChannel": true
+        },
+        "liveAgentSettings": {
+          "enableLiveAgent": true
+        }
+    }
+}

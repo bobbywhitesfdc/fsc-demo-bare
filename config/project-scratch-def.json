@@ -1,22 +1,31 @@
 {
-  "orgName": "FSC Demo Pack",
+  "orgName": "FSC with Partner Communities",
   "country": "US",
-  "edition": "Developer",
-  "description": "Contains a baseline demo of the Financial Services Cloud app.",
+  "edition": "Enterprise",
+  "description": "Financial Services Cloud Playground",
   "hasSampleData": false,
   "language": "en_US",
   "features": [
     "Communities",
+    "PartnerCommunity",
     "ContactsToMultipleAccounts",
     "PersonAccounts",
     "FinancialServicesUser:5",
     "FinancialServicesCommunityUser:10",
     "DocumentChecklist",
+    "IndustriesActionPlan",
     "LiveAgent",
     "PlatformConnect",
-    "PlatformEncryption"
+    "PlatformEncryption",
+    "ServiceCloud",
+    "LiveMessage",
+    "EventLogFile",
+    "SecurityEventEnabled"
   ],
    "settings": {
+        "accountSettings": {
+          "enableRelateContactToMultipleAccounts" : true
+        },
         "lightningExperienceSettings": {
             "enableS1DesktopEnabled": true
         },
@@ -26,11 +35,17 @@
         "communitiesSettings": {
             "enableNetworksEnabled": true,
             "enableCommunityWorkspaces" : true,
-            "enableEnablePRM" : true,
+            "enableEnablePRM" : false,
             "enableNetPortalUserReportOpts" : true,
             "enablePRMAccRelPref" : true,
             "enableCspContactVisibilityPref" : true,
             "enableCspNotesOnAccConPref" : true
+        },
+        "omniChannelSettings": {
+            "enableOmniChannel": true
+        },
+        "liveAgentSettings": {
+          "enableLiveAgent": true
         }
     }
 }

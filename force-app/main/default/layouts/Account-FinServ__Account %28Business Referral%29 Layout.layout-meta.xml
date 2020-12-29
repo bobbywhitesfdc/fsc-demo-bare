@@ -45,10 +45,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>YearStarted</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Enterprise_Party_Id__c</field>
             </layoutItems>
         </layoutColumns>
@@ -84,14 +80,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>NumberOfEmployees</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>NaicsCode</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>NaicsDesc</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

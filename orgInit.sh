@@ -2,7 +2,7 @@
 # Exit on error!
 set -euxo pipefail
 #create scratch org
-sfdx force:org:create -f config/project-scratch-def.json -s -a FSCDEMO username=admin@fsc.demo.org
+sfdx force:org:create -f config/project-scratch-def.json -s -a FSCDEMO username=admin@fsc.demo.org --durationdays 14
 
 #package installs of the main FSC package
 # Working around deprecation issues by allowing hand editing
@@ -13,7 +13,7 @@ sfdx force:package:install --package 04t1E000001Iql5 -w 20
 sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 
 # Limited customization required for data loading
-sfdx force:source:push
+sfdx force:source:push -f
 sfdx force:user:permset:assign -n FSC_Data_Load
 sfdx force:user:permset:assign -n Platform_Encryption_Management
 

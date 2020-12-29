@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single Family home</fullName>
+                <default>false</default>
+                <label>Single Family home</label>
+            </value>
+            <value>
+                <fullName>Town home</fullName>
+                <default>false</default>
+                <label>Town home</label>
+            </value>
+            <value>
+                <fullName>Leased</fullName>
+                <default>false</default>
+                <label>Leased</label>
+            </value>
+            <value>
+                <fullName>Owned</fullName>
+                <default>false</default>
+                <label>Owned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

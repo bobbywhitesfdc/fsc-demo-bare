@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__ServiceType__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The type of service undertaken.</description>
+    <externalId>false</externalId>
+    <label>Service Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Merchant Services</fullName>
+                <default>false</default>
+                <label>Merchant Services</label>
+            </value>
+            <value>
+                <fullName>Lockbox</fullName>
+                <default>false</default>
+                <label>Lockbox</label>
+            </value>
+            <value>
+                <fullName>Positive Pay</fullName>
+                <default>false</default>
+                <label>Positive Pay</label>
+            </value>
+            <value>
+                <fullName>Business Bill Pay</fullName>
+                <default>false</default>
+                <label>Business Bill Pay</label>
+            </value>
+            <value>
+                <fullName>Wire Transfer</fullName>
+                <default>false</default>
+                <label>Wire Transfer</label>
+            </value>
+            <value>
+                <fullName>ACH</fullName>
+                <default>false</default>
+                <label>ACH</label>
+            </value>
+            <value>
+                <fullName>Account Analysis</fullName>
+                <default>false</default>
+                <label>Account Analysis</label>
+            </value>
+            <value>
+                <fullName>Remote Deposit Capture</fullName>
+                <default>false</default>
+                <label>Remote Deposit Capture</label>
+            </value>
+            <value>
+                <fullName>Purchase Cards</fullName>
+                <default>false</default>
+                <label>Purchase Cards</label>
+            </value>
+            <value>
+                <fullName>Credit Cards</fullName>
+                <default>false</default>
+                <label>Credit Cards</label>
+            </value>
+            <value>
+                <fullName>Zero Balance Account</fullName>
+                <default>false</default>
+                <label>Zero Balance Account</label>
+            </value>
+            <value>
+                <fullName>Bill Presentment</fullName>
+                <default>false</default>
+                <label>Bill Presentment</label>
+            </value>
+            <value>
+                <fullName>Controlled Disbursement</fullName>
+                <default>false</default>
+                <label>Controlled Disbursement</label>
+            </value>
+            <value>
+                <fullName>Sweep to Repo</fullName>
+                <default>false</default>
+                <label>Sweep to Repo</label>
+            </value>
+            <value>
+                <fullName>Sweep to Line</fullName>
+                <default>false</default>
+                <label>Sweep to Line</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

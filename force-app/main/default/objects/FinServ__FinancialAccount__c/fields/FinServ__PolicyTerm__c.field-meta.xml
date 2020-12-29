@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__PolicyTerm__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Length of time the policyholder pays an insurance premium.</description>
+    <externalId>false</externalId>
+    <label>Policy Term</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>6 Months</fullName>
+                <default>false</default>
+                <label>6 Months</label>
+            </value>
+            <value>
+                <fullName>1 Year</fullName>
+                <default>false</default>
+                <label>1 Year</label>
+            </value>
+            <value>
+                <fullName>2 Years</fullName>
+                <default>false</default>
+                <label>2 Years</label>
+            </value>
+            <value>
+                <fullName>3 Years</fullName>
+                <default>false</default>
+                <label>3 Years</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

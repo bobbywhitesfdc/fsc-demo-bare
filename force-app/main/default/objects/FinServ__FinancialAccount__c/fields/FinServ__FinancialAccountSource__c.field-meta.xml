@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__FinancialAccountSource__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates source of financial account data, such as a third party integration or manual entry.</description>
+    <externalId>false</externalId>
+    <label>Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Integrator</fullName>
+                <default>false</default>
+                <label>Integrator</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Manual Entry</fullName>
+                <default>false</default>
+                <label>Manual Entry</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

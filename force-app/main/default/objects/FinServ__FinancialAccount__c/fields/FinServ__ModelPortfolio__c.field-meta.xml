@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__ModelPortfolio__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The model asset allocation for this financial account.</description>
+    <externalId>false</externalId>
+    <label>Model Portfolio</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Conservative</fullName>
+                <default>false</default>
+                <label>Conservative</label>
+            </value>
+            <value>
+                <fullName>Moderate</fullName>
+                <default>false</default>
+                <label>Moderate</label>
+            </value>
+            <value>
+                <fullName>Balanced</fullName>
+                <default>false</default>
+                <label>Balanced</label>
+            </value>
+            <value>
+                <fullName>Growth</fullName>
+                <default>false</default>
+                <label>Growth</label>
+            </value>
+            <value>
+                <fullName>Aggressive</fullName>
+                <default>false</default>
+                <label>Aggressive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
