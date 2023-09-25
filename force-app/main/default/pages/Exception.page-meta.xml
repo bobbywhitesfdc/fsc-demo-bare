@@ -5,9 +5,4 @@
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <description>Default Lightning Platform page for post-authentication errors</description>
     <label>Exception</label>
-    <packageVersions>
-        <majorNumber>224</majorNumber>
-        <minorNumber>5</minorNumber>
-        <namespace>FinServ</namespace>
-    </packageVersions>
 </ApexPage>

@@ -5,9 +5,4 @@
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <description>Default communities self registration confirmation page</description>
     <label>CommunitiesSelfRegConfirm</label>
-    <packageVersions>
-        <majorNumber>224</majorNumber>
-        <minorNumber>5</minorNumber>
-        <namespace>FinServ</namespace>
-    </packageVersions>
 </ApexPage>

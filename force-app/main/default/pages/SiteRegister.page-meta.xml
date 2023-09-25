@@ -5,9 +5,4 @@
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <description>Default Salesforce Sites User Registration page</description>
     <label>SiteRegister</label>
-    <packageVersions>
-        <majorNumber>224</majorNumber>
-        <minorNumber>5</minorNumber>
-        <namespace>FinServ</namespace>
-    </packageVersions>
 </ApexPage>

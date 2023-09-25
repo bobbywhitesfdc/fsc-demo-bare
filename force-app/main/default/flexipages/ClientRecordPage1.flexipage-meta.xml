@@ -3,6 +3,9 @@
     <description>Lightning page template for cloning client and household record pages in Financial Services Cloud.</description>
     <flexiPageRegions>
         <componentInstances>
+            <componentName>force:detailPanel</componentName>
+        </componentInstances>
+        <componentInstances>
             <componentInstanceProperties>
                 <name>collapsed</name>
                 <value>false</value>

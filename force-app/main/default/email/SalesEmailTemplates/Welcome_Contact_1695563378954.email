@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hi {{{Recipient.FirstName}}}<br />
+It's my pleasure to welcome you to the Bolt family.&nbsp; &nbsp;We pride ourselves on putting the customer first.<br />
+Please feel free to reach out at any time by mail, phone, or text if we can serve you in any way.<br />
+<br />
+Sincerely,<br />
+{{{User.FirstName}}}<br />
+<br />
+{{{Sender.Signature}}}</body>
+</html>

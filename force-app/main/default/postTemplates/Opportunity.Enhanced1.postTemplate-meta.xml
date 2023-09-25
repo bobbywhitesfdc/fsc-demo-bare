@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PostTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <default>true</default>
+    <description>Create an Enhanced Post that includes more of the context that the business needs.  Should save a few mouse clicks to navigate back the original record.  Wow this is very limiting to only be able to include 4 fields.  Pretty useless.</description>
+    <fields>Name</fields>
+    <fields>StageName</fields>
+    <fields>Amount</fields>
+    <fields>CloseDate</fields>
+    <label>Enhanced1</label>
+</PostTemplate>

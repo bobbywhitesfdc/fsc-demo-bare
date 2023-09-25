@@ -5,9 +5,4 @@
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <description>Default Salesforce Sites Login page</description>
     <label>SiteLogin</label>
-    <packageVersions>
-        <majorNumber>224</majorNumber>
-        <minorNumber>5</minorNumber>
-        <namespace>FinServ</namespace>
-    </packageVersions>
 </ApexPage>
