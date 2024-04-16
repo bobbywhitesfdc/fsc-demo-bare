@@ -18,6 +18,9 @@
     "PlatformConnect:2",
     "PlatformEncryption",
     "ServiceCloud",
+    "CaseClassification",
+    "CaseWrapUp",
+    "ServiceCloudVoicePartnerTelephony:10",
     "LiveMessage",
     "EventLogFile",
     "SecurityEventEnabled"
