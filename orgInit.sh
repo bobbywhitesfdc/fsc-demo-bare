@@ -1,15 +1,23 @@
 #!/bin/bash
 # Exit on error!
 set -euxo pipefail
-#create scratch org
-sfdx force:org:create -f config/project-scratch-def.json -s -a FSCDEMO username=admin14@fsc.demo.org --durationdays 28
 
-#package installs of the main FSC package
+function prop {
+    grep "${1}" project.properties|cut -d'=' -f2
+}
+#create scratch org
+# let it auto-assign the username ( username="$(prop 'user.admin' )" )
+sf org create scratch -f config/project-scratch-def.json -a "$(prop 'default.env.alias' )" --username="$(prop 'user.admin' )" --set-default --duration-days 28 -v DEVHUB
+
+#create scratch org
+##sf org create scratch -f config/project-scratch-def.json -a FSCDEMO --username=admin1@fsc.demo.org -
+
+#DEPRECATED!! package installs of the main FSC package
 # Working around deprecation issues by allowing hand editing
 # See ./packages/installedPackage/FinServ.installedPackage
-sfdx force:mdapi:deploy -d packages -w 20 
+#sfdx force:mdapi:deploy -d packages -w 20 
 
-sfdx force:package:install --package 04t1E000001Iql5 -w 20
+#sfdx force:package:install --package 04t1E000001Iql5 -w 20
 sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 
 # Limited customization required for data loading
