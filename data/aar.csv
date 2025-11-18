@@ -1,4 +1,4 @@
-FinServ__Account__r.Enterprise_Party_Id__c,FinServ__RelatedAccount__r.Enterprise_Party_Id__c,FinServ__ExternalId__c,FinServ__Active__c,FinServ__Role__r.Name
-"HH1","E1","HH1-E1","true","Member"
-"HH2","E2","HH2-E2","true","Member"
+AccountFrom.Enterprise_Party_Id__c,AccountTo.Enterprise_Party_Id__c,AA_External_Id__c,Type
+"HH1","E1","HH1-E1","Member"
+"HH2","E2","HH2-E2","Member"
 

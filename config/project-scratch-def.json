@@ -7,9 +7,9 @@
   "language": "en_US",
   "features": [
     "Communities",
-    "CustomerCommunityPlus:5",
-    "CustomerCommunity:5",
-    "PartnerCommunity:5",
+    "CustomerCommunityPlus",
+    "CustomerCommunity",
+    "PartnerCommunity",
     "ContactsToMultipleAccounts",
     "PersonAccounts",
     "FinancialServicesUser:5",

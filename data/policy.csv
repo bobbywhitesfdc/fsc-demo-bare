@@ -1,0 +1,3 @@
+"Name","PolicyName","PolicyExtId__c","PolicyType","Status","IsActive","PolicyTerm"
+"POL1","POL1","POL1","Life","In Force","true","Monthly"
+"POL2","POL2","POL2","Life","In Force","true","Annual"

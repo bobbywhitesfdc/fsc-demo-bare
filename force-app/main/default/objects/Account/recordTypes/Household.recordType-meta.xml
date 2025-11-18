@@ -1,16 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Business_Account</fullName>
+    <fullName>Household</fullName>
     <active>true</active>
-    <label>Business Account</label>
+    <description>Household represents a family unit for financial planning purposes.  This may include related individuals and businesses including trusts.</description>
+    <label>Household</label>
     <picklistValues>
         <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
         <values>
             <fullName>Other</fullName>
             <default>false</default>
         </values>
         <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -182,7 +219,19 @@
     <picklistValues>
         <picklist>Type</picklist>
         <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Channel Partner %2F Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
             <default>false</default>
         </values>
         <values>
@@ -198,11 +247,31 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Other</fullName>
             <default>false</default>
         </values>
         <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
             <default>false</default>
         </values>
         <values>
