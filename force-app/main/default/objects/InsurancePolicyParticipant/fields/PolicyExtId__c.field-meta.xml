@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>PolicyExtId__c</fullName>
-    <caseSensitive>false</caseSensitive>
-    <description>External identifier for Policy that is durable and is known to the Policy Administration systems.</description>
+    <description>Policy External ID as known to the Policy Administration System.  Used to resolve the lookup to Policy.</description>
     <externalId>true</externalId>
     <label>Policy Ext Id</label>
     <length>60</length>
     <required>true</required>
     <trackHistory>false</trackHistory>
     <type>Text</type>
-    <unique>true</unique>
+    <unique>false</unique>
 </CustomField>
