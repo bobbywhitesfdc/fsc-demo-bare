@@ -17,4 +17,16 @@ public class BulkAPILookupResolverTest {
        final String result = BulkAPILookupResolver.lookup(InsurancePolicyParticipant.PrimaryParticipantAccountId);
        System.AssertEquals('PrimaryParticipantAccount.enterprise_party_id__c',result); 
     }
+    public static testmethod void testNull() {
+       final String result = BulkAPILookupResolver.lookup(null);
+       System.AssertEquals(null,result); 
+    } 
+    public static testmethod void testNullCompose() {
+       final String result = BulkAPILookupResolver.composeFieldReference(null,null);
+       System.AssertEquals(null,result); 
+    }    
+    public static testmethod void testNullExtIdFields() {
+       final List<String> result = BulkAPILookupResolver.getExternalIdFields(null);
+       System.AssertEquals(null,result); 
+    }    
 }

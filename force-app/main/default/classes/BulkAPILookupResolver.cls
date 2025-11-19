@@ -19,14 +19,17 @@ public class BulkAPILookupResolver {
      * Use Schema Describe methods to generate the field reference syntax
      **/ 
     public static String lookup(final Schema.sObjectField targetField) {
+        // short circuit on null
+        if (targetField==null) return null;
+        
         // get the targetField, list the relationship name
         // get the source object from that targetField
         // list the ExternalId fields that are candidates
         // compose the syntax reference based on the relationship name
         Schema.DescribeFieldResult dfr = targetField.getDescribe().getSObjectField().getDescribe();
         String result = '';
-        List <Schema.sObjectType> sourceTypes = dfr.getReferenceTo();
-        for (Schema.sObjectType soType : sourceTypes) {
+
+        for (Schema.sObjectType soType : dfr.getReferenceTo()) {
             if (!String.IsBlank(result)) result += ',';
             result += composeFieldReference(dfr.getRelationshipName(),getExternalIdFields(soType));
         }
@@ -35,19 +38,21 @@ public class BulkAPILookupResolver {
     public static List<String> getExternalIdFields(Schema.SObjectType sobjectType) {
         List<String> externalIdFields = new List<String>();
         
-        if (sobjectType != null) {
+        if (sobjectType == null) { 
+            return externalIdFields; 
+        } else {
             // Get the describe result
-            Schema.DescribeSObjectResult describeResult = sobjectType.getDescribe();
+            Schema.DescribeSObjectResult describeResult = sobjectType?.getDescribe();
             
             // Get all fields
-            Map<String, Schema.SObjectField> fieldsMap = describeResult.fields.getMap();
+            Map<String, Schema.SObjectField> fieldsMap = describeResult?.fields?.getMap();
             
             // Iterate through fields and check for External ID AND Unique
-            for (String fieldName : fieldsMap.keySet()) {
-                Schema.DescribeFieldResult fieldDescribe = fieldsMap.get(fieldName).getDescribe();
+            for (String fieldName : fieldsMap?.keySet()) {
+                Schema.DescribeFieldResult fieldDescribe = fieldsMap?.get(fieldName)?.getDescribe();
                 
                 // Check if field is marked as External ID AND is Unique
-                if (fieldDescribe.isExternalId() && fieldDescribe.isUnique()) {
+                if (fieldDescribe?.isExternalId() && fieldDescribe?.isUnique()) {
                     externalIdFields.add(fieldName);
                 }
             }
@@ -56,7 +61,7 @@ public class BulkAPILookupResolver {
         return externalIdFields;
     }
     public static String composeFieldReference(final String relationshipName, final List<String> externalIdFields) {
-        if (String.isBlank(relationshipName) || externalIdFields == null || externalIdFields.isEmpty()) {
+        if (String.isBlank(relationshipName) || externalIdFields?.isEmpty()) {
             return null;
         }
         
