@@ -14,27 +14,104 @@
  * Output: 
  * CSV Header for this field reference
  **/ 
-public class BulkAPILookupResolver {  
+public class BulkAPILookupResolver {
+    
+/**
+ * Generate a CSV header for the given SObjectType with all fields.
+ * Lookup fields use external ID references, RecordTypeId uses RecordType.DeveloperName,
+ * Id field is excluded, and read-only fields are skipped.
+ * 
+ * @param sobjectType The SObjectType to generate CSV header for
+ * @return CSV header string with field references
+ **/
+public static String generateCSVHeader(final Schema.SObjectType sobjectType) {
+    if (sobjectType == null) {
+        return null;
+    }
+    
+    List<String> headerFields = new List<String>();
+    Schema.DescribeSObjectResult describeResult = sobjectType.getDescribe();
+    Map<String, Schema.SObjectField> fieldsMap = describeResult.fields.getMap();
+    
+    for (String fieldName : fieldsMap.keySet()) {
+        System.debug('processing: ' + fieldName);
+        Schema.SObjectField fieldToken = fieldsMap.get(fieldName);
+        Schema.DescribeFieldResult fieldDescribe = fieldToken.getDescribe();
+        
+        // Skip the Id field
+        if (fieldDescribe.getName().equalsIgnoreCase('Id')) {
+            System.Debug('skipping ID field');
+            continue;
+        }
+        
+        // Skip read-only fields (system audit fields like CreatedDate, CreatedById, LastModifiedDate, etc.)
+        if (!fieldDescribe.isCreateable() && !fieldDescribe.isUpdateable()) {
+            System.Debug('Skipping unwritable field:' + fieldDescribe.getName());
+            continue;
+        }
+        
+        // Special handling for RecordTypeId
+        if (fieldDescribe.getName().equalsIgnoreCase('RecordTypeId')) {
+            headerFields.add('RecordType.DeveloperName');
+            continue;
+        }
+        
+        if (fieldDescribe.getName()==null) {
+            System.Debug('### NULL Name - type: ' + fieldDescribe.getType());
+            continue;
+        } 
+        
+        // Check if this is a lookup/master-detail relationship
+        if (fieldDescribe.getType() == Schema.DisplayType.REFERENCE) {
+            String lookupReference = lookup(fieldToken);
+            System.Debug('Lookup reference:'+lookupReference);
+            if (!String.isBlank(lookupReference)) {
+                headerFields.add(lookupReference);
+            } else {
+                // Fallback to regular field name if no external IDs found
+                headerFields.add(fieldDescribe.getName());
+            }
+        } else {
+            // Regular field - use the field name
+            headerFields.add(fieldDescribe.getName());
+        }
+    }
+    
+    return String.join(headerFields, ',');
+}    
     /**
      * Use Schema Describe methods to generate the field reference syntax
      **/ 
     public static String lookup(final Schema.sObjectField targetField) {
         // short circuit on null
-        if (targetField==null) return null;
+        if (targetField == null) return null;
+        
+        System.Debug('Processing Lookups for:' + targetField);
         
         // get the targetField, list the relationship name
         // get the source object from that targetField
         // list the ExternalId fields that are candidates
         // compose the syntax reference based on the relationship name
         Schema.DescribeFieldResult dfr = targetField.getDescribe().getSObjectField().getDescribe();
-        String result = '';
-
+        String result = null;
         for (Schema.sObjectType soType : dfr.getReferenceTo()) {
-            if (!String.IsBlank(result)) result += ',';
-            result += composeFieldReference(dfr.getRelationshipName(),getExternalIdFields(soType));
+            String composedRef = composeFieldReference(dfr.getRelationshipName(), getExternalIdFields(soType));
+            if (composedRef == null || composedRef=='null') {
+                System.Debug('### skipping null composedRef');
+                continue; 
+            }
+            
+            if (result == null) {
+                result = '';
+            } else if (!String.IsBlank(result)) {
+               result += ','; 
+            } 
+            
+            result += composeFieldReference(dfr.getRelationshipName(), getExternalIdFields(soType));
         }
         return result;
-    } 
+    }
+    
     public static List<String> getExternalIdFields(Schema.SObjectType sobjectType) {
         List<String> externalIdFields = new List<String>();
         
@@ -60,8 +137,10 @@ public class BulkAPILookupResolver {
         
         return externalIdFields;
     }
+    
     public static String composeFieldReference(final String relationshipName, final List<String> externalIdFields) {
-        if (String.isBlank(relationshipName) || externalIdFields?.isEmpty()) {
+        System.Debug('###relname:' + relationshipName + ' extIdFields:' + externalIdFields);
+        if (String.isBlank(relationshipName) || externalIdFields == null || externalIdFields.isEmpty()) {
             return null;
         }
         

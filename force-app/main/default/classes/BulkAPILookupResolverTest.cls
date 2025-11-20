@@ -27,6 +27,11 @@ public class BulkAPILookupResolverTest {
     }    
     public static testmethod void testNullExtIdFields() {
        final List<String> result = BulkAPILookupResolver.getExternalIdFields(null);
-       System.AssertEquals(null,result); 
-    }    
+       System.AssertEquals(new List<String>(),result);  // Empty
+    }
+
+    public static testmethod void testOwnerField() {
+        final String result = BulkAPILookupResolver.lookup(InsurancePolicy.OwnerId);
+        System.AssertEquals(null,result);         
+    }   
 }
