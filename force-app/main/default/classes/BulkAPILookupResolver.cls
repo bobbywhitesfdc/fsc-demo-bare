@@ -14,7 +14,7 @@
  * Output: 
  * CSV Header for this field reference
  **/ 
-public class BulkAPILookupResolver {
+public class BulkAPILookupResolver {  
     /**
      * Use Schema Describe methods to generate the field reference syntax
      **/ 
