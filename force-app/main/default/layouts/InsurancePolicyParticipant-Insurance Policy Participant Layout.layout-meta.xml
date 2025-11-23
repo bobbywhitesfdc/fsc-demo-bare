@@ -37,14 +37,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>PolicyExtId__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Enterprise_Party_Id__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Policy_Participant_External_Id__c</field>
             </layoutItems>
         </layoutColumns>

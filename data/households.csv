@@ -1,4 +1,4 @@
-Name,Enterprise_Party_Id__c,RecordType.Name
+Name,MM_Member_Id__c,RecordType.Name
 "Test Household1","HH1","Household"
 "Test Household2","HH2","Household"
 "Test Household3","HH3","Household"

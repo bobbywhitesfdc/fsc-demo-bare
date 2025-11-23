@@ -57,7 +57,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>PolicyExtId__c</field>
+                <field>Agreement_Number__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -299,6 +299,12 @@
         <fields>Premium</fields>
         <fields>WorkerCount</fields>
         <relatedList>WorkerCompCoverageClasses</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>Producer</fields>
+        <fields>LineOfBusiness</fields>
+        <relatedList>ProducerPolicyAssignments</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>Name</fields>

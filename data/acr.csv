@@ -1,4 +1,4 @@
-"Account.Enterprise_Party_Id__c","Contact.Enterprise_Party_Id__c","ACR_Ext_Id__c","IsActive","Roles"
+"Account.MM_Member_Id__c","Contact.MM_Member_Id__c","ACR_Ext_Id__c","IsActive","Roles"
 "HH1","P1","HH1-P1","true","Other"
 "HH2","P2","HH2-P2","true","Other"
 "HH3","P3","HH3-P3","true","Other"

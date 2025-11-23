@@ -1,4 +1,4 @@
-AccountFrom.Enterprise_Party_Id__c,AccountTo.Enterprise_Party_Id__c,AA_External_Id__c,Type
+AccountFrom.mm_member_id__c,AccountTo.mm_member_id__c,AA_External_Id__c,Type
 "HH1","E1","HH1-E1","Member"
 "HH2","E2","HH2-E2","Member"
 

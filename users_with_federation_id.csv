@@ -1,0 +1,2 @@
+Username,Email,FirstName,LastName,FederationIdentifier,IsActive,ProfileId,UserRoleId,TimeZoneSidKey,LocaleSidKey,EmailEncodingKey,LanguageLocaleKey
+test-xkzgks8qoqj4@example.com,bobby.white@salesforce.com,User,User,bobby.white@salesforce.com,true,00eDX000001IjuZYAS,,America/Los_Angeles,en_US,UTF-8,en_US
