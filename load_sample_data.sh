@@ -11,6 +11,10 @@ sf force data bulk upsert  -f data/households.csv -s Account -i MM_Member_Id__c 
 sf force data bulk upsert  -f data/persons.csv -s Account -i MM_Member_Id__c -w 20
 sf force data bulk upsert  -f data/businesses.csv -s Account -i MM_Member_Id__c -w 20
 sf force data bulk upsert  -f data/partners.csv -s Account -i Producer_BP_Id__c -w 20
+sf force data bulk upsert  -f data/contacts.csv -s Contact -i Producer_BP_Id__c -w 20
+
+sf force data bulk upsert  -f data/producers.csv -s Producer -i Producer_External_ID__c -w 20
+
 sf force data bulk upsert  -f data/acr.csv -s AccountContactRelation -i ACR_Ext_Id__c -w 20
 sf force data bulk upsert  -f data/aar.csv -s AccountRelationship -i AA_External_Id__c -w 20
 sf force data bulk upsert  -f data/policy.csv -s InsurancePolicy -i Agreement_Number__c -w 20

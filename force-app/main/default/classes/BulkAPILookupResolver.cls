@@ -15,7 +15,10 @@
  * CSV Header for this field reference
  **/ 
 public class BulkAPILookupResolver {
-    
+ 
+    public static String generateCSVHeader(final Schema.SObjectType sobjectType) {
+        return generateCSVHeader(sobjectType,true);
+    }
 /**
  * Generate a CSV header for the given SObjectType with all fields.
  * Lookup fields use external ID references, RecordTypeId uses RecordType.DeveloperName,
@@ -24,7 +27,7 @@ public class BulkAPILookupResolver {
  * @param sobjectType The SObjectType to generate CSV header for
  * @return CSV header string with field references
  **/
-public static String generateCSVHeader(final Schema.SObjectType sobjectType) {
+public static String generateCSVHeader(final Schema.SObjectType sobjectType, boolean includeAllFields) {
     if (sobjectType == null) {
         return null;
     }
@@ -73,7 +76,9 @@ public static String generateCSVHeader(final Schema.SObjectType sobjectType) {
             }
         } else {
             // Regular field - use the field name
-            headerFields.add(fieldDescribe.getName());
+            if (includeAllFields || !fieldDescribe.isNillable() || fieldDescribe.isCustom()) {
+               headerFields.add(fieldDescribe.getName());
+            }
         }
     }
     
