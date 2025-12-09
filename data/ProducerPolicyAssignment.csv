@@ -1,0 +1,2 @@
+Producer.producer_external_id__c,InsurancePolicy.agreement_number__c, InsurancePolicy.agreement_key__c,PPA_ExternalID__c
+"PROD1","POL1","PROD1-POL1"

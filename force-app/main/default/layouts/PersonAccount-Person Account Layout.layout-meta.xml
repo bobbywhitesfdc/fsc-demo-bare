@@ -51,11 +51,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>MM_Member_ID__pc</field>
+                <field>MM_Member_Id__pc</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>MM_Member_ID__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Agency_BP_Id__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

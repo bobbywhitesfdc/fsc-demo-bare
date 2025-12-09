@@ -49,6 +49,10 @@
                 <behavior>Edit</behavior>
                 <field>MM_Member_ID__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Agency_BP_Id__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

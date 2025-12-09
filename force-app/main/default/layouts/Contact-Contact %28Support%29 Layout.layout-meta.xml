@@ -35,7 +35,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>MM_Member_ID__c</field>
+                <field>MM_Member_Id__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

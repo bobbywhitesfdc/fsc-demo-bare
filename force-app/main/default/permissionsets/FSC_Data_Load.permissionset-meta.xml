@@ -208,7 +208,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.MM_Member_ID__c</field>
+        <field>Contact.MM_Member_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
