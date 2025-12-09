@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -58,6 +59,26 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Agreement_Number__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Line_of_Business__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Admin__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Product_Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Product_Name__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Agreement_Key__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -270,9 +291,10 @@
     </relatedLists>
     <relatedLists>
         <fields>Name</fields>
+        <fields>ParticipantName</fields>
         <fields>PrimaryParticipantAccount</fields>
         <fields>Role</fields>
-        <fields>RelationshipToInsured</fields>
+        <fields>Policy_Participant_External_Id__c</fields>
         <relatedList>InsurancePolicyParticipants</relatedList>
     </relatedLists>
     <relatedLists>
@@ -324,4 +346,10 @@
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
+    <summaryLayout>
+        <masterLabel>00hDX000005UsTO</masterLabel>
+        <sizeX>4</sizeX>
+        <sizeY>0</sizeY>
+        <summaryLayoutStyle>Default</summaryLayoutStyle>
+    </summaryLayout>
 </Layout>

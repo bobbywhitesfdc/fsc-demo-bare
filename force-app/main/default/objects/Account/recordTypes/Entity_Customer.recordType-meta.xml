@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Customer_Entity</fullName>
+    <fullName>Entity_Customer</fullName>
     <active>true</active>
     <description>Represents a customer business entity such as a Trust or LLC</description>
-    <label>Business Entity</label>
+    <label>Entity Customer</label>
     <picklistValues>
         <picklist>AccountSource</picklist>
         <values>

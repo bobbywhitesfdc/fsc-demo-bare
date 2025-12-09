@@ -258,6 +258,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>InsurancePolicy.Admin__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>InsurancePolicy.AuditTerm</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -393,6 +398,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>InsurancePolicy.Line_of_Business__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>InsurancePolicy.OriginalEffectiveDate</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -519,6 +529,16 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>InsurancePolicy.ProductId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>InsurancePolicy.Product_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>InsurancePolicy.Product_Type__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -853,7 +873,7 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <recordType>Account.Customer_Entity</recordType>
+        <recordType>Account.Entity_Customer</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

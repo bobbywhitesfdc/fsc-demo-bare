@@ -21,6 +21,7 @@ sf force data bulk upsert  -f data/policy.csv -s InsurancePolicy -i Agreement_Nu
 
 #InsurancePolicyParticipant is the junction between Policy and Contact OR Account
 sf force data bulk upsert  -f data/ipp.csv -s InsurancePolicyParticipant -i Policy_Participant_External_Id__c -w 20
+sf force data bulk upsert  -f data/ipp_stubbed.csv -s InsurancePolicyParticipant -i Policy_Participant_External_Id__c -w 20
 
 #sf force data bulk upsert  -f data/financialaccounts.csv -s FinServ__FinancialAccount__c -i FinServ__FinancialAccountNumber__c -w 20
 

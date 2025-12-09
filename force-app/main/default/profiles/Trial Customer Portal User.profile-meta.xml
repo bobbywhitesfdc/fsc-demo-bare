@@ -238,6 +238,26 @@
         <field>Contact.Producer_BP_Id__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>InsurancePolicy.Admin__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>InsurancePolicy.Line_of_Business__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>InsurancePolicy.Product_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>InsurancePolicy.Product_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
@@ -247,7 +267,7 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
-        <recordType>Account.Customer_Entity</recordType>
+        <recordType>Account.Entity_Customer</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
@@ -268,6 +288,18 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>InsurancePolicy-Insurance Policy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InsurancePolicy-Insurance Policy Layout</layout>
+        <recordType>InsurancePolicy.Annuity</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InsurancePolicy-Insurance Policy Layout</layout>
+        <recordType>InsurancePolicy.Disability</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InsurancePolicy-Insurance Policy Layout</layout>
+        <recordType>InsurancePolicy.Life</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>InsurancePolicyParticipant-Insurance Policy Participant Layout</layout>
@@ -387,7 +419,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>Account.Customer_Entity</recordType>
+        <recordType>Account.Entity_Customer</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -399,6 +431,21 @@
         <default>false</default>
         <recordType>Account.Partner</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>InsurancePolicy.Annuity</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>InsurancePolicy.Disability</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>InsurancePolicy.Life</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
