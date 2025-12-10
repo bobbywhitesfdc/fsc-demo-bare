@@ -1,0 +1,3 @@
+"InsurancePolicy.Agreement_Number__c","PrimaryParticipantAccount.MM_Member_Id__c","Policy_Participant_External_Id__c","ParticipantName","Role"
+"POL1","P1","POL1-P1","Babu Thinasi","Owner,Insured,Payor"
+"POL1","P8","POL1-P8","Jigna Thinasi","Beneficiary"

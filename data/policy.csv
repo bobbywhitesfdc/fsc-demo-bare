@@ -1,0 +1,3 @@
+"Name","PolicyName","Agreement_Number__c","NameInsured.mm_member_id__c","PolicyType","Status","PolicyTerm"
+"POL1","POL1","POL1","P1","Life","In Force","Monthly"
+"POL2","POL2","POL2","P2","Life","In Force","Annual"

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MM_Member_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Member ID unique customer Identifier is mastered by the MDM system for End Customers</description>
+    <externalId>true</externalId>
+    <label>MM Member Id</label>
+    <length>60</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

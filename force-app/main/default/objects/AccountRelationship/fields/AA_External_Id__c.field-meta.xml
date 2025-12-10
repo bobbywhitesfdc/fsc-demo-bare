@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AA_External_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Concatenated Unique External ID used for Upserting Account to Account relationships.  Example value:   A1-A2</description>
+    <externalId>true</externalId>
+    <label>AA External Id</label>
+    <length>100</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

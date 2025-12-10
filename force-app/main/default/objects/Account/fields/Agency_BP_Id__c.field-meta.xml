@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency_BP_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Agency Business Producer Id. External Unique identifier of Agency Producer Id. Only uded by &quot;Partner&quot; record type.</description>
+    <externalId>true</externalId>
+    <label>Agency_BP_Id</label>
+    <length>10</length>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

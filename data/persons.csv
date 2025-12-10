@@ -1,7 +1,8 @@
-FirstName,LastName,Enterprise_Party_Id__c,Enterprise_Party_Id__pc,RecordType.Name
-"Babu","Thinasi","P1","P1","Person Account"
-"Shiv","Jangrid","P2","P2","Person Account"
-"Sriram","Padi","P3","P3","Person Account"
-"Dheeban","Jeganathan","P4","P5","Person Account"
-"Deepak","Sharma","P6","P6","Person Account"
-"Oliver","Sinfield","P7","P7","Person Account"
+FirstName,LastName,MM_Member_Id__c,MM_Member_Id__pc,RecordType.Name
+"Babu","Thinasi","P1","P1","Customer"
+"Shiv","Jangrid","P2","P2","Customer"
+"Sriram","Padi","P3","P3","Customer"
+"Dheeban","Jeganathan","P4","P5","Customer"
+"Deepak","Sharma","P6","P6","Customer"
+"Oliver","Sinfield","P7","P7","Customer"
+"Jigna","Thinasi","P8","P8","Customer"

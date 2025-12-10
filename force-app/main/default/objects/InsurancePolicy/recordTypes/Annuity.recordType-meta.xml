@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annuity</fullName>
+    <active>true</active>
+    <description>Annuity Product</description>
+    <label>Annuity</label>
+    <picklistValues>
+        <picklist>AuditTerm</picklist>
+        <values>
+            <fullName>Annually</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi Annual%28twice a year%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly%28twice a month%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CancellationReasonType</picklist>
+        <values>
+            <fullName>Canceled at Request of the Finance Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled by Underwriter or Plan Administrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Officer Non-Election</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Court Release</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coverage Placed Elsewhere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure to Comply with Terms and Conditions %28ex%2E Audit Failure%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure to Pay Deductible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insured%27s Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misrepresentation of Information on Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Taken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revocation of Voluntary Market Acceptance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rewritten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substantial Change in Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underwriting Reasons</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ChangeSubtype</picklist>
+        <values>
+            <fullName>Child Birth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marriage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ChangeType</picklist>
+        <values>
+            <fullName>House Renovation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life-Event</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FnolChannel</picklist>
+        <values>
+            <fullName>Chatbot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Line_of_Business__c</picklist>
+        <values>
+            <fullName>Annuity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Insurance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PlanTier</picklist>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platinum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PlanType</picklist>
+        <values>
+            <fullName>Joint First-to-Die</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joint Last-to-Die</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Life</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PolicyTerm</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Annual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PolicyType</picklist>
+        <values>
+            <fullName>Annuity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workers%27 Compensation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PremiumCalculationMethod</picklist>
+        <values>
+            <fullName>Daily</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PremiumFrequency</picklist>
+        <values>
+            <fullName>Annually</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi Annual%28twice a year%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semi-Monthly%28twice a month%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PremiumPaymentType</picklist>
+        <values>
+            <fullName>Advance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrears</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RenewalChannel</picklist>
+        <values>
+            <fullName>Chatbot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Agreement Premature endings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Life Ending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hypothetical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Force</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Force with temporary coverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Force-change pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Insurer Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lapsed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation End</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Taken Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Abandoned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quoted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replaced by customer application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replaced by insurer counter offer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reversed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under negotiation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Substatus</picklist>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation End</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Taken Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote Abandoned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Key__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>External Policy Number</description>
+    <externalId>true</externalId>
+    <label>Agreement Key</label>
+    <length>50</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

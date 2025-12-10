@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MM_Member_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Unique external ID for this Entity Customer</description>
+    <externalId>true</externalId>
+    <label>Member ID</label>
+    <length>60</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

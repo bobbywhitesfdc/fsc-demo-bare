@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>External identifier for Policy that is durable and is known to the Policy Administration systems.</description>
+    <externalId>true</externalId>
+    <label>Agreement Number</label>
+    <length>60</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>
