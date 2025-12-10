@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Commercial Property</fullName>
+        <default>false</default>
+        <label>Commercial Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Liability</fullName>
+        <default>false</default>
+        <label>Business Liability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Auto</fullName>
+        <default>false</default>
+        <label>Commercial Auto</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Life</fullName>
+        <default>false</default>
+        <label>Life</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Disability</fullName>
+        <default>false</default>
+        <label>Disability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Annuities</fullName>
+        <default>false</default>
+        <label>Annuities</label>
+    </standardValue>
+</StandardValueSet>

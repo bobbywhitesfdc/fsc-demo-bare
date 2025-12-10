@@ -203,6 +203,11 @@
         </quickActionListItems>
     </quickActionList>
     <relatedLists>
+        <fields>Name</fields>
+        <fields>Type</fields>
+        <relatedList>ProducersAccount</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>FULL_NAME</fields>
         <fields>CONTACT.TITLE</fields>
         <fields>CONTACT.EMAIL</fields>

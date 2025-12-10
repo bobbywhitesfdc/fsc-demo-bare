@@ -6,7 +6,7 @@
     <externalId>true</externalId>
     <label>Agency_BP_Id</label>
     <length>10</length>
-    <required>true</required>
+    <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Text</type>
     <unique>true</unique>

@@ -53,5 +53,10 @@ public class BulkAPILookupResolverTest {
     public static testmethod void testOwnerField() {
         final String result = BulkAPILookupResolver.lookup(InsurancePolicy.OwnerId);
         System.AssertEquals(null,result);         
-    }   
+    } 
+    public static testmethod void testPPAcsv() {
+       final String result = BulkAPILookupResolver.generateCSVHeader(ProducerPolicyAssignment.SObjectType);
+       System.AssertEquals('OwnerId,InsurancePolicy.agreement_number__c, InsurancePolicy.agreement_key__c,Producer.producer_external_id__c,LineOfBusiness,PPA_ExternalID__c',result); 
+    }    
+
 }
