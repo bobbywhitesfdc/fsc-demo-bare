@@ -11,11 +11,18 @@ sf org create scratch -f config/project-scratch-def.json -a "$(prop 'default.env
 
 sf org assign permsetlicense -n FinServ_FinancialServicesCloudStandardPsl
 sf org assign permsetlicense -n FSCInsurancePsl
-sf org assign permset -n FSC_Data_Load
+
+# MANUAL INTERVENTION REQUIRED AFTER THIS STEP
+sf org open
+
+echo "You must complete manual steps before continuing"
+echo "Step1 - Enable Digital Experiences - Account Relationships"
+echo "Step2 - Enable Insurance Settings ->Let Multiple Producers Work on the Same Policy"
+read -p "Press Enter to continue..."
+
 
 # Limited customization required for data loading
-#sf project deploy start -w 20
+sf project deploy start -w 20
+sf org assign permset -n FSC_Data_Load
 
-#sfdx force:apex:execute -f scripts/apex/fixroles.apex
 
-sf org open

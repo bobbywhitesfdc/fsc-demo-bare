@@ -14,7 +14,7 @@
     <dashboardType>SpecifiedUser</dashboardType>
     <description>Track key metrics and get insights about partner sales, productivity, and enablement. This dashboard is included on the standard Channel Management Console app home page.</description>
     <isGridLayout>true</isGridLayout>
-    <runningUser>test-xkzgks8qoqj4@example.com</runningUser>
+    <runningUser>bobby.white@fscdemo4.scratch.org</runningUser>
     <textColor>#000000</textColor>
     <title>Channel Management Overview</title>
     <titleColor>#000000</titleColor>

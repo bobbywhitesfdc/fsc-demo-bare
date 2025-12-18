@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Household</fullName>
     <active>true</active>
-    <description>Household represents a family unit for financial planning purposes.  This may include related individuals and businesses including trusts.</description>
+    <description>Household represents a family unit for financial planning purposes.  This may include related individuals and businesses including trusts.  Used to drive rollups</description>
     <label>Household</label>
     <picklistValues>
         <picklist>AccountSource</picklist>
@@ -223,27 +223,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Channel Partner %2F Reseller</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Competitor</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Customer</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Customer - Channel</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Customer - Direct</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Installation Partner</fullName>
             <default>false</default>
         </values>
         <values>
@@ -272,10 +256,6 @@
         </values>
         <values>
             <fullName>Reseller</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Technology Partner</fullName>
             <default>false</default>
         </values>
     </picklistValues>

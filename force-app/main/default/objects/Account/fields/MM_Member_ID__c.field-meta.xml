@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>MM_Member_ID__c</fullName>
     <caseSensitive>false</caseSensitive>
-    <description>Unique external ID for this Entity Customer</description>
+    <description>Unique external ID for this Entity Customer. Mastered in MDM</description>
     <externalId>true</externalId>
     <label>Member ID</label>
     <length>60</length>

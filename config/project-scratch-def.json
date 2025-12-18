@@ -36,14 +36,8 @@
         },
         "communitiesSettings": {
             "enableNetworksEnabled": true,
-            "enableCommunityWorkspaces" : true,
-            "enableEnablePRM" : false,
-            "enableNetPortalUserReportOpts" : true,
-            "enablePRMAccRelPref" : true,
-            "enableCspContactVisibilityPref" : true,
-            "enableAccountRelationships" : true,
-            "enableCspNotesOnAccConPref" : true
-        },
+            "enableCommunityWorkspaces" : true
+       },
         "omniChannelSettings": {
             "enableOmniChannel": true
         },
