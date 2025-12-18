@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>PPA_ExternalID__c</fullName>
-    <caseSensitive>true</caseSensitive>
+    <fullName>PPA_External_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
     <description>Producer Policy Association Unique External ID is a composite key of PRODUCER&lt;---&gt;Policy used to upsert this junction object.</description>
     <externalId>true</externalId>
-    <label>PPA ExternalID</label>
-    <length>120</length>
+    <label>PPA External Id</label>
+    <length>255</length>
     <required>true</required>
     <trackHistory>false</trackHistory>
     <type>Text</type>

@@ -43,7 +43,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Account.MM_Member_ID__c</field>
+        <field>Account.MM_Member_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -69,11 +69,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Producer_BP_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-        <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.MM_Member_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -213,7 +208,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.MM_Member_Id__c</field>
+        <field>Contact.MM_Member_ID__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -243,7 +238,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Producer_BP_ID__c</field>
+        <field>Contact.Producer_BP_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

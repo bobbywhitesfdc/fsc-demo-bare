@@ -16,8 +16,7 @@ sf org assign permsetlicense -n FSCInsurancePsl
 sf org open
 
 echo "You must complete manual steps before continuing"
-echo "Step1 - Enable Digital Experiences - Account Relationships"
-echo "Step2 - Enable Insurance Settings ->Let Multiple Producers Work on the Same Policy"
+cat < ./manual_steps.txt
 read -p "Press Enter to continue..."
 
 

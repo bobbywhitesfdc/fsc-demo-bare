@@ -18,7 +18,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Producer_External_ID__c</field>
+                <field>Producer_External_Id__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

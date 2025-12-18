@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Producer_External_ID__c</fullName>
+    <fullName>Producer_External_Id__c</fullName>
     <caseSensitive>true</caseSensitive>
     <description>Composite External ID that represents the combination of the &quot;Firm&quot; BP ID and the &quot;Producer&quot; BP ID.   Individual Producers may have many Producer-Firm relationships through which they sell insurance products.</description>
     <externalId>true</externalId>
-    <label>Producer External ID</label>
+    <label>Producer External Id</label>
     <length>120</length>
     <required>true</required>
     <trackHistory>false</trackHistory>

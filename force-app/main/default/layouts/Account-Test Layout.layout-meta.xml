@@ -15,7 +15,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>MM_Member_ID__c</field>
+                <field>MM_Member_Id__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -29,6 +29,8 @@
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
+        <layoutColumns/>
+        <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
