@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IndustriesSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <allowMultipleProducersToWorkOnSamePolicy>true</allowMultipleProducersToWorkOnSamePolicy>
+
+    <enableAccountRelationships>true</enableAccountRelationships>
+    <enableAccessToMasterListOfCoverageTypes>true</enableAccessToMasterListOfCoverageTypes>
+</IndustriesSettings>

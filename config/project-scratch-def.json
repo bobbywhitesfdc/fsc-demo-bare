@@ -41,6 +41,7 @@
             "enableNetPortalUserReportOpts" : true,
             "enablePRMAccRelPref" : true,
             "enableCspContactVisibilityPref" : true,
+            "enableAccountRelationships" : true,
             "enableCspNotesOnAccConPref" : true
         },
         "omniChannelSettings": {
