@@ -57,10 +57,6 @@
                 <field>OriginalEffectiveToDate</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Agreement_Number__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Line_of_Business__c</field>
             </layoutItems>
