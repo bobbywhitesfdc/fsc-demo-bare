@@ -44,10 +44,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Producer_BP_ID__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>MM_Member_Id__c</field>
             </layoutItems>
             <layoutItems>

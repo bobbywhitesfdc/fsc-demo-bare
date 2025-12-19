@@ -43,10 +43,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Producer_BP_ID__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>Producer_BP_Id__pc</field>
             </layoutItems>
             <layoutItems>

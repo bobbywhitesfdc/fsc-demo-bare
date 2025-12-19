@@ -1,2 +1,2 @@
-Producer.producer_external_id__c,InsurancePolicy.agreement_key__c,PPA_ExternalID__c
+Producer.producer_external_id__c,InsurancePolicy.agreement_key__c,PPA_External_Id__c
 "PT1-AGENT1","POL1","PT1-AGENT1-POL1"
