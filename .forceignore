@@ -11,8 +11,6 @@ package.xml
 # LWC Jest
 **/__tests__/**
 
-# Ignore auto-generated indexes (external ID fields create these automatically)
-**/indexes/**
 
 # Ignore profiles (use permission sets instead)
 **/profiles/**
