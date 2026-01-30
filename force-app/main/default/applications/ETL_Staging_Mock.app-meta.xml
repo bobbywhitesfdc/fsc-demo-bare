@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Just the ETL objects</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>ETL Staging Mock</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-InsurancePolicy</tabs>
+    <tabs>STAGE_IPP__c</tabs>
+    <tabs>STAGE_PERSON__c</tabs>
+    <tabs>STAGING_POLICY__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>ETL_Staging_Mock_UtilityBar</utilityBar>
+</CustomApplication>

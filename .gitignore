@@ -36,3 +36,5 @@ ehthumbs.db
 $RECYCLE.BIN/
 
 **/bulkresults/**
+bulk_results/**
+bulk_results/

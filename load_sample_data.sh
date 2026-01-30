@@ -101,18 +101,18 @@ echo "Object,Records Processed,Records Failed" > bulk_results/load_summary.csv
 # Get org credentials once
 get_org_info
 
-#run_bulk_upsert "data/households.csv" "Account" "MM_Member_Id__c" "households"
-#run_bulk_upsert "data/persons.csv" "Account" "MM_Member_Id__c" "persons"
-#run_bulk_upsert "data/businesses.csv" "Account" "MM_Member_Id__c" "businesses"
+run_bulk_upsert "data/households.csv" "Account" "MM_Member_Id__c" "households"
+run_bulk_upsert "data/persons.csv" "Account" "MM_Member_Id__c" "persons"
+run_bulk_upsert "data/businesses.csv" "Account" "MM_Member_Id__c" "businesses"
 run_bulk_upsert "data/partners.csv" "Account" "Agency_BP_Id__c" "partners"
 run_bulk_upsert "data/contacts.csv" "Contact" "Producer_BP_Id__c" "contacts"
 run_bulk_upsert "data/producers.csv" "Producer" "Producer_External_Id__c" "producers"
-#run_bulk_upsert "data/acr.csv" "AccountContactRelation" "ACR_Ext_Id__c" "acr"
-#run_bulk_upsert "data/aar.csv" "AccountRelationship" "AA_External_Id__c" "aar"
-#run_bulk_upsert "data/policy.csv" "InsurancePolicy" "Agreement_Key__c" "policy"
-#run_bulk_upsert "data/ipp.csv" "InsurancePolicyParticipant" "Policy_Participant_External_Id__c" "ipp"
-#run_bulk_upsert "data/ipp_stubbed.csv" "InsurancePolicyParticipant" "Policy_Participant_External_Id__c" "ipp_stubbed"
-#run_bulk_upsert "data/ProducerPolicyAssignment.csv" "ProducerPolicyAssignment" "PPA_External_Id__c" "ppa"
+run_bulk_upsert "data/acr.csv" "AccountContactRelation" "ACR_Ext_Id__c" "acr"
+run_bulk_upsert "data/aar.csv" "AccountRelationship" "AA_External_Id__c" "aar"
+run_bulk_upsert "data/policy.csv" "InsurancePolicy" "Agreement_Key__c" "policy"
+run_bulk_upsert "data/ipp.csv" "InsurancePolicyParticipant" "Policy_Participant_External_Id__c" "ipp"
+run_bulk_upsert "data/ipp_stubbed.csv" "InsurancePolicyParticipant" "Policy_Participant_External_Id__c" "ipp_stubbed"
+run_bulk_upsert "data/ProducerPolicyAssignment.csv" "ProducerPolicyAssignment" "PPA_External_Id__c" "ppa"
 
 echo ""
 echo "========================================"
