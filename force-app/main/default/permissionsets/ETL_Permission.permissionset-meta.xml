@@ -536,66 +536,8 @@
         <field>InsurancePolicy.WritingCarrierAccountId</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGE_IPP__c.InsurancePolicyAgreement_Key_c__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGE_IPP__c.ParticipantName__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGE_IPP__c.Policy_Participant_External_Id_c__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGE_IPP__c.PrimaryParticipantAccountMM_Member_Id__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGE_IPP__c.Role__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGING_POLICY__c.Agreement_Key_c__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGING_POLICY__c.NameInsuredmm_member_id_c__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGING_POLICY__c.Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGING_POLICY__c.PolicyName__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGING_POLICY__c.PolicyTerm__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGING_POLICY__c.PolicyType__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>STAGING_POLICY__c.Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+
+
     <hasActivationRequired>false</hasActivationRequired>
     <label>ETL_Permission</label>
     <objectPermissions>
@@ -625,15 +567,7 @@
         <object>InsurancePolicy</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    <objectPermissions>
-        <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>STAGE_IPP__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
+
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -643,15 +577,7 @@
         <object>STAGE_PERSON__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
-    <objectPermissions>
-        <allowCreate>false</allowCreate>
-        <allowDelete>true</allowDelete>
-        <allowEdit>true</allowEdit>
-        <allowRead>true</allowRead>
-        <modifyAllRecords>true</modifyAllRecords>
-        <object>STAGING_POLICY__c</object>
-        <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
+
     <recordTypeVisibilities>
         <recordType>Account.Business_Account</recordType>
         <visible>true</visible>
@@ -688,12 +614,6 @@
         <recordType>PersonAccount.PersonAccount</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
-    <tabSettings>
-        <tab>STAGE_IPP__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
-        <tab>STAGING_POLICY__c</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
+
+
 </PermissionSet>

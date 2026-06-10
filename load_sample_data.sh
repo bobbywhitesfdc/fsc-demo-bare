@@ -12,7 +12,7 @@ mkdir -p bulk_results/working
 
 # Get org info and access token
 get_org_info() {
-    sf org display --json > bulk_results/working/org_info.json 2>/dev/null
+    sf org display -o AFPOC --json > bulk_results/working/org_info.json 2>/dev/null
     ORG_INSTANCE=$(jq -r '.result.instanceUrl' bulk_results/working/org_info.json)
     ACCESS_TOKEN=$(jq -r '.result.accessToken' bulk_results/working/org_info.json)
     API_VERSION="v62.0"
@@ -28,7 +28,7 @@ run_bulk_upsert() {
     echo "Loading $name..."
     
     # Run the bulk upsert and capture output as JSON (suppress warnings)
-    local output=$(sf data upsert bulk -f "$file" -s "$object" -i "$extid" -w 20 --json 2>/dev/null)
+    local output=$(sf data upsert bulk -o AFPOC -f "$file" -s "$object" -i "$extid" -w 20 --json 2>/dev/null)
     echo "$output" > "bulk_results/working/${name}_load.json"
     
     # Extract job ID from JSON response
@@ -101,18 +101,18 @@ echo "Object,Records Processed,Records Failed" > bulk_results/load_summary.csv
 # Get org credentials once
 get_org_info
 
-run_bulk_upsert "data/households.csv" "Account" "MM_Member_Id__c" "households"
 run_bulk_upsert "data/persons.csv" "Account" "MM_Member_Id__c" "persons"
 run_bulk_upsert "data/businesses.csv" "Account" "MM_Member_Id__c" "businesses"
 run_bulk_upsert "data/partners.csv" "Account" "Agency_BP_Id__c" "partners"
 run_bulk_upsert "data/contacts.csv" "Contact" "Producer_BP_Id__c" "contacts"
 run_bulk_upsert "data/producers.csv" "Producer" "Producer_External_Id__c" "producers"
-run_bulk_upsert "data/acr.csv" "AccountContactRelation" "ACR_Ext_Id__c" "acr"
-run_bulk_upsert "data/aar.csv" "AccountRelationship" "AA_External_Id__c" "aar"
 run_bulk_upsert "data/policy.csv" "InsurancePolicy" "Agreement_Key__c" "policy"
 run_bulk_upsert "data/ipp.csv" "InsurancePolicyParticipant" "Policy_Participant_External_Id__c" "ipp"
 run_bulk_upsert "data/ipp_stubbed.csv" "InsurancePolicyParticipant" "Policy_Participant_External_Id__c" "ipp_stubbed"
 run_bulk_upsert "data/ProducerPolicyAssignment.csv" "ProducerPolicyAssignment" "PPA_External_Id__c" "ppa"
+#run_bulk_upsert "data/households.csv" "Account" "MM_Member_Id__c" "households"
+#run_bulk_upsert "data/acr.csv" "AccountContactRelation" "ACR_Ext_Id__c" "acr"
+#run_bulk_upsert "data/aar.csv" "AccountRelationship" "AA_External_Id__c" "aar"
 
 echo ""
 echo "========================================"

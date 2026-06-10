@@ -14,9 +14,8 @@
     <navType>Standard</navType>
     <tabs>standard-Account</tabs>
     <tabs>standard-InsurancePolicy</tabs>
-    <tabs>STAGE_IPP__c</tabs>
     <tabs>STAGE_PERSON__c</tabs>
-    <tabs>STAGING_POLICY__c</tabs>
+
     <uiType>Lightning</uiType>
     <utilityBar>ETL_Staging_Mock_UtilityBar</utilityBar>
 </CustomApplication>

@@ -2,7 +2,7 @@
 <DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>Manage</accessLevel>
-        <sharedTo>bobby.white@fscdemo6.scratch.org</sharedTo>
+        <sharedTo>bobby.white@flat-producer.scratch.org</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <name>PRM Dashboards</name>
