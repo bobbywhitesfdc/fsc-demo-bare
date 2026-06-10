@@ -50,6 +50,7 @@ run_bulk_upsert() {
 # Main execution
 echo "========================================"
 echo "Bulk Data Load"
+echo "Target org: $(prop 'default.env.alias')"
 echo "Started at: $(date)"
 echo "========================================"
 echo ""
