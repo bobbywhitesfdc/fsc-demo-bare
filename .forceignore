@@ -17,3 +17,7 @@ package.xml
 
 # AppSwitcher causes unresolvable gack errors in scratch orgs
 **/appMenus/AppSwitcher.appMenu-meta.xml
+
+# Folder sharing references a hardcoded username — not relevant to this use case
+**/prm_channel_dashboard_folder.dashboardFolder-meta.xml
+**/prm_channel_reports_folder.reportFolder-meta.xml

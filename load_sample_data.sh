@@ -12,7 +12,7 @@ mkdir -p bulk_results/working
 
 # Get org info and access token
 get_org_info() {
-    sf org display -o AFPOC --json > bulk_results/working/org_info.json 2>/dev/null
+    sf org display -o "$(prop 'default.env.alias')" --json > bulk_results/working/org_info.json 2>/dev/null
     ORG_INSTANCE=$(jq -r '.result.instanceUrl' bulk_results/working/org_info.json)
     ACCESS_TOKEN=$(jq -r '.result.accessToken' bulk_results/working/org_info.json)
     API_VERSION="v62.0"
@@ -28,7 +28,7 @@ run_bulk_upsert() {
     echo "Loading $name..."
     
     # Run the bulk upsert and capture output as JSON (suppress warnings)
-    local output=$(sf data upsert bulk -o AFPOC -f "$file" -s "$object" -i "$extid" -w 20 --json 2>/dev/null)
+    local output=$(sf data upsert bulk -o "$(prop 'default.env.alias')" -f "$file" -s "$object" -i "$extid" -w 20 --json 2>/dev/null)
     echo "$output" > "bulk_results/working/${name}_load.json"
     
     # Extract job ID from JSON response
