@@ -14,3 +14,6 @@ package.xml
 
 # Ignore profiles (use permission sets instead)
 **/profiles/**
+
+# AppSwitcher causes unresolvable gack errors in scratch orgs
+**/appMenus/AppSwitcher.appMenu-meta.xml

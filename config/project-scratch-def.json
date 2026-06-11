@@ -43,6 +43,10 @@
         },
         "liveAgentSettings": {
           "enableLiveAgent": true
+        },
+        "industriesSettings": {
+            "enableAccountRelationships": true,
+            "allowMultipleProducersToWorkOnSamePolicy": true
         }
     }
 }
