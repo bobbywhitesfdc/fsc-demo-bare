@@ -26,6 +26,9 @@ node_modules/
 # Eslint cache
 .eslintcache
 
+# Environment-specific config (copy from project.properties.example)
+project.properties
+
 # MacOS system files
 .DS_Store
 

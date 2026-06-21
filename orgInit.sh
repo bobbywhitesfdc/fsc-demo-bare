@@ -7,7 +7,13 @@ function prop {
 }
 #create scratch org
 # let it auto-assign the username ( username="$(prop 'user.admin' )" )
-sf org create scratch -f config/project-scratch-def.json -a "$(prop 'default.env.alias' )" --username="$(prop 'user.admin' )" --set-default --duration-days 28
+# devhub.alias is optional: if set in project.properties, pass --target-dev-hub; otherwise omit and use the CLI default
+DEVHUB="$(prop 'devhub.alias' || true)"
+DEVHUB_FLAG=""
+if [ -n "${DEVHUB}" ]; then
+    DEVHUB_FLAG="--target-dev-hub ${DEVHUB}"
+fi
+sf org create scratch -f config/project-scratch-def.json -a "$(prop 'default.env.alias' )" --username="$(prop 'user.admin' )" ${DEVHUB_FLAG} --set-default --duration-days 28
 
 sf org assign permsetlicense -n FinServ_FinancialServicesCloudStandardPsl
 sf org assign permsetlicense -n FSCInsurancePsl

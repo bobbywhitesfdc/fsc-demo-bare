@@ -113,7 +113,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>AccountContactRelation.ACR_Ext_ID__c</field>
+        <field>AccountContactRelation.ACR_Ext_Id__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

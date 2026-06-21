@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------------------
+# Template for project.properties
+#
+# Copy this file to project.properties and fill in your own values:
+#     cp project.properties.example project.properties
+#
+# project.properties is intentionally gitignored so environment-specific
+# values (usernames, internal Dev Hub aliases) are never committed.
+# ---------------------------------------------------------------------------
+
+# Alias for the scratch org. Used by sf as -a / --target-org.
+default.env.alias=FSCDEMO
+
+# Scratch org admin username. Must be globally unique across all of Salesforce.
+# NOTE: a recently-deleted scratch username is reserved by Salesforce for a
+# while, so if "sf org create" fails with C-1007 (username in use) right after
+# a delete, bump this to a fresh value.
+user.admin=first.last@yourdemo.scratch.org
+
+# OPTIONAL: Dev Hub alias to create the scratch org against.
+# Must be a Dev Hub with FSC + Experience Cloud / Community license
+# entitlements (otherwise the community license features come back as
+# "Invalid input" warnings). If this line is omitted, orgInit.sh falls back
+# to the sf CLI default Dev Hub.
+#devhub.alias=YOUR_DEVHUB_ALIAS

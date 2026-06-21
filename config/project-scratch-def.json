@@ -36,7 +36,8 @@
         },
         "communitiesSettings": {
             "enableNetworksEnabled": true,
-            "enableCommunityWorkspaces" : true
+            "enableCommunityWorkspaces" : true,
+            "enablePRMAccRelPref" : true
        },
         "omniChannelSettings": {
             "enableOmniChannel": true
@@ -45,7 +46,6 @@
           "enableLiveAgent": true
         },
         "industriesSettings": {
-            "enableAccountRelationships": true,
             "allowMultipleProducersToWorkOnSamePolicy": true
         }
     }
